@@ -1,30 +1,18 @@
 <style>
-col.selected || td {
-  background: gray;
-  color: white;
-  font-weight: bold;
+p {
+  font-size: 20px;
+  /* overflow-wrap: break-word; */
+  text-transform: capitalize;
+  white-space: pre;
 }
 </style>
 <body>
-    <table border="1">
-        <colgroup>
-          <col span="2"/>
-          <col class="selected"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>A
-            <td>B
-            <td>C
-          </tr>
-          <tr>
-            <td colspan="2">D</td>
-            <td>E</td>
-          </tr>
-          <tr>
-            <td>F</td>
-            <td colspan="2">G</td>
-          </tr>
-        </tbody>
-      </table>
+    <p>
+      与 pre-wrap的行为相同，除了：
+
+任何保留的空白序列总是占用空间，包括在行尾。
+每个保留的空格字符后都存在换行机会，包括空格字符之间。
+这样保留的空间占用空间而不会挂起，从而影响盒子的固有尺寸（最小内容大小和最大内容大小）。
+
+    </p>
 </body>
