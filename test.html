@@ -7,7 +7,7 @@ div {
   border: 20px black solid;
   flex-wrap: wrap;
   width: 1000px;
-  height: 300px;
+  height: 300px;  
 }
 
 span { 
@@ -15,7 +15,8 @@ span {
   width: 100px;       
 }
 
-div :nth-child(1) {    
+div :nth-child(1) {      
+  animation: test  3s 0s 10;
   background-color: red;  
 }
 
@@ -26,6 +27,16 @@ div :nth-child(2) {
 
 div :nth-child(3) {    
   background-color: yellow;  
+}
+
+@keyframes test {
+  from {
+    transform: translateX(0%); 
+  }
+
+  to {
+    transform: translateX(100%);
+  }
 }
 
 </style>
