@@ -1,19 +1,50 @@
 <style>
-p {
-  font-size: 20px;
-  /* overflow-wrap: break-word; */
-  text-transform: capitalize;
-  white-space: pre;
-  text-shadow: 1px 1px 2px black;
+div {
+  display: flex;  
+  flex-direction: row;  
+  align-content: space-between;
+  align-items:flex-start;
+  border: 20px black solid;
+  flex-wrap: wrap;
+  width: 1000px;
+  height: 300px;
 }
+
+span { 
+  background-color: yellowgreen;
+  width: 100px;       
+}
+
+div :nth-child(1) {    
+  background-color: red;  
+}
+
+
+div :nth-child(2) {    
+  background-color: green;
+}
+
+div :nth-child(3) {    
+  background-color: yellow;  
+}
+
 </style>
 <body>
-    <p>
-      与 pre-wrap的行为相同，除了：
-
-任何保留的空白序列总是占用空间，包括在行尾。
-每个保留的空格字符后都存在换行机会，包括空格字符之间。
-这样保留的空间占用空间而不会挂起，从而影响盒子的固有尺寸（最小内容大小和最大内容大小）。
-
-    </p>
+  <div>
+    <span> item One 1212121</span>
+    <span> item Two 121212</span>
+    <span> item Three 121212</span>
+    <span> item Four</span>
+    <span> item Five</span>
+    <span> item One</span>
+    <span> item Two</span>
+    <span> item Three</span>
+    <span> item Four</span>
+    <span> item Five</span>
+    <span> item One</span>
+    <span> item Two</span>
+    <span> item Three</span>
+    <span> item Four</span>
+    <span> item Five</span>
+  </div>
 </body>
