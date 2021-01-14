@@ -38,53 +38,32 @@
 </style>
 
 <body>
-  <table>
-    <caption>How I chose to spend my money</caption>
-    <thead>
-      <tr>
-        <th>Purchase</th>
-        <th>Location</th>
-        <th>Date</th>
-        <th>Evaluation</th>
-        <th>Cost (€)</th>
-      </tr>
-    </thead>
-    <tfoot>
-      <tr>
-        <td colspan='4'>SUM</td>
-        <td>118</td>
-      </tr>
-    </tfoot>
-    <tbody>
-      <tr>
-        <td>Haircut</td>
-        <td>Hairdresser</td>
-        <td>12/09</td>
-        <td>Great idea</td>
-        <td>30</td>
-      </tr>
-      <tr>
-        <td>Lasagna</td>
-        <td>Restaurant</td>
-        <td>12/09</td>
-        <td>Regrets</td>
-        <td>18</td>
-      </tr>
-      <tr>
-        <td>Shoes</td>
-        <td>Shoeshop</td>
-        <td>13/09</td>
-        <td>Big regrets</td>
-        <td>65</td>
-      </tr>
-      <tr>
-        <td>Toothpaste</td>
-        <td>Supermarket</td>
-        <td>13/09</td>
-        <td>Good</td>
-        <td>5</td>
-      </tr>
-    </tbody>
-  </table>
-  <input/>
+  <form>
+    <fieldset>
+      <legend>Fruit juice size</legend>
+      <p>
+        <input type="radio" name="size" id="size_1" value="small">
+        <label for="size_1">Small</label>
+      </p>
+      <p>
+        <input type="radio" name="size" id="size_2" value="medium">
+        <label for="size_2">Medium</label>
+      </p>
+      <p>
+        <input type="radio" name="size" id="size_3" value="large">
+        <label for="size_3">Large</label>
+      </p>
+    </fieldset>
+    <select id="simple" name="simple">
+      <option>Banana</option>
+      <option>Cherry</option>
+      <option>Lemon</option>
+    </select>
+
+    <select multiple id="multi" name="multi">
+      <option>Banana</option>
+      <option>Cherry</option>
+      <option>Lemon</option>
+    </select>
+  </form>
 </body>
